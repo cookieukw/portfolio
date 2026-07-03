@@ -19,7 +19,7 @@ export function SectionHeader({ number, category, title, description, className 
         whileInView={{ opacity: 0.03, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-        className="absolute -top-10 -left-10 text-[180px] leading-none font-bold select-none pointer-events-none text-white overflow-hidden"
+        className="absolute -top-6 md:-top-10 -left-4 md:-left-10 text-[120px] md:text-[180px] leading-none font-bold select-none pointer-events-none text-white overflow-hidden"
       >
         {number}
       </motion.div>
@@ -50,7 +50,7 @@ export function SectionHeader({ number, category, title, description, className 
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-          className="text-4xl md:text-6xl font-bold tracking-tight uppercase relative inline-block"
+          className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight uppercase relative inline-block break-words"
         >
           {title}
         </motion.h2>

@@ -398,7 +398,7 @@ export default function App() {
           </div>
         </aside>
 
-        <main className="flex-1 lg:ml-20 flex flex-col relative border-l border-[var(--color-border)]">
+        <main className="flex-1 lg:ml-20 flex flex-col relative border-l-0 lg:border-l border-[var(--color-border)]">
           <Hero />
 
           <section

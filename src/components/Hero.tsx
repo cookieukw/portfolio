@@ -34,10 +34,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-            className="text-[60px] md:text-[100px] lg:text-[120px] font-bold leading-[0.85] tracking-tighter uppercase group"
+            className="text-[46px] sm:text-[60px] md:text-[100px] lg:text-[120px] font-bold leading-[0.85] tracking-tighter uppercase group"
           >
             NOT
-            <br className="hidden md:block" />
+            <br />
             ANOTHER
             <span
               className="text-transparent stroke-white inline-block transition-transform duration-1000 group-hover:translate-x-4"

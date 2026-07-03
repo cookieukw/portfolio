@@ -113,11 +113,11 @@ const totalLanguageBytes = stats.languages
       {!showStats ? (
         <div className="w-full h-full absolute inset-0">{renderFallback()}</div>
       ) : (
-        <div className="w-full h-full flex flex-col bg-[var(--color-background)] p-6 pt-20 pb-16 md:p-8 md:pt-24 md:pb-16 font-mono text-[10px] uppercase tracking-widest absolute inset-0 z-20">
+        <div className="w-full h-full flex flex-col bg-[var(--color-background)] p-4 pt-32 pb-12 md:p-8 md:pt-28 md:pb-16 font-mono text-[9px] md:text-[10px] uppercase tracking-widest absolute inset-0 z-20">
           {/* Header Stats */}
-          <div className="flex justify-between items-start border-b border-[var(--color-border)] pb-4 mb-6">
+          <div className="flex justify-between items-start border-b border-[var(--color-border)] pb-3 mb-4 md:pb-4 md:mb-6">
             <div>
-              <div className="flex items-center gap-2 mb-2">
+              <div className="flex items-center gap-2 mb-1.5 md:mb-2">
                 <div
                   className={`w-1.5 h-1.5 rounded-full ${stats.status === "ACTIVE" ? "bg-emerald-500 animate-pulse" : stats.status === "EVOLVING" ? "bg-blue-500" : "bg-gray-500"}`}
                 ></div>
@@ -126,7 +126,7 @@ const totalLanguageBytes = stats.languages
               <div className="text-white/40">Repository Data</div>
             </div>
             <div className="text-right">
-              <div className="text-xl font-bold text-white mb-1">
+              <div className="text-lg md:text-xl font-bold text-white mb-0.5 md:mb-1">
                 {stats.commitCount}+
               </div>
               <div className="opacity-40">Total Commits</div>
@@ -182,8 +182,8 @@ const totalLanguageBytes = stats.languages
           </div>
 
           {/* Commit Timeline Mockup */}
-          <div className="flex-1 flex flex-col justify-end">
-            <div className="opacity-40 mb-3">Activity Pulse (Recent)</div>
+          <div className="flex-1 flex flex-col justify-end hidden sm:flex">
+            <div className="opacity-40 mb-2 md:mb-3">Activity Pulse (Recent)</div>
             <div className="flex items-end gap-1 h-16 w-full opacity-60 hover:opacity-100 transition-opacity">
               {Array.from({ length: 40 }).map((_, i) => {
                 // Generate a fake distribution based on the commit count hash to look realistic
