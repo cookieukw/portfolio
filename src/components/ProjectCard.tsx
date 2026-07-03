@@ -28,7 +28,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           <h3 className="text-3xl font-bold uppercase mt-4 tracking-tight group-hover:text-[var(--color-accent)] group-hover:translate-x-1 transition-all duration-500 font-sans">
             {project.title}
           </h3>
-          <p className="text-xs mt-6 leading-relaxed opacity-40 font-light italic font-sans">
+          <p className="text-xs mt-6 leading-relaxed opacity-40 font-light font-sans text-justify">
             {project.description}
           </p>
         </div>

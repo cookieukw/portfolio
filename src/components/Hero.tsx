@@ -51,7 +51,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="mt-8 max-w-md text-sm leading-relaxed opacity-40 font-light italic"
+            className="mt-8 max-w-md text-sm leading-relaxed opacity-40 font-light"
           >
             I build developer tools, game engines, desktop applications and AI
             systems focused on solving complex technical problems. Most of my
