@@ -382,25 +382,32 @@ export default function App() {
     <div className="relative w-full min-h-screen bg-[var(--color-background)] font-sans">
       <BackgroundOverlay />
       <Navigation />
-      
+
       <div className="pt-16 flex w-full relative z-10">
         <aside className="hidden lg:flex w-20 border-r border-[var(--color-border)] flex-col items-center py-12 justify-between fixed h-[calc(100vh-64px)] top-16 left-0">
-          <div className="text-[10px] [writing-mode:vertical-rl] rotate-180 opacity-30 tracking-[0.5em] uppercase font-bold">System Blueprint</div>
+          <div className="text-[10px] [writing-mode:vertical-rl] rotate-180 opacity-30 tracking-[0.5em] uppercase font-bold">
+            I like strategic games
+          </div>
           <div className="flex flex-col gap-6">
             <div className="w-1 h-1 bg-[var(--color-accent)]"></div>
             <div className="w-1 h-1 bg-white/20"></div>
             <div className="w-1 h-1 bg-white/20"></div>
           </div>
-          <div className="text-[10px] [writing-mode:vertical-rl] rotate-180 opacity-30 tracking-[0.5em] uppercase font-bold font-mono">EST. 2026</div>
+          <div className="text-[10px] [writing-mode:vertical-rl] rotate-180 opacity-30 tracking-[0.5em] uppercase font-bold font-mono">
+            (˶ˆᗜˆ˵)
+          </div>
         </aside>
 
         <main className="flex-1 lg:ml-20 flex flex-col relative border-l border-[var(--color-border)]">
           <Hero />
-          
-          <section id="work" className="relative py-24 md:py-32 px-6 md:px-16 w-full ">
+
+          <section
+            id="work"
+            className="relative py-24 md:py-32 px-6 md:px-16 w-full "
+          >
             <DecorativeFrame />
             <AnimatedDivider />
-            <SectionHeader 
+            <SectionHeader
               number="01"
               category="Projects"
               title="Selected Work"
@@ -413,10 +420,13 @@ export default function App() {
             </div>
           </section>
 
-          <section id="experience" className="relative py-24 md:py-32 px-6 md:px-16 w-full ">
+          <section
+            id="experience"
+            className="relative py-24 md:py-32 px-6 md:px-16 w-full "
+          >
             <DecorativeFrame />
             <AnimatedDivider />
-            <SectionHeader 
+            <SectionHeader
               number="02"
               category="Evolution"
               title="Project Evolution"
@@ -426,57 +436,90 @@ export default function App() {
               <ExperienceTimeline experiences={DUMMY_EXPERIENCES} />
             </div>
           </section>
-          
-          <section id="about" className="relative py-24 md:py-32 px-6 md:px-16 bg-[var(--color-surface)] ">
+
+          <section
+            id="about"
+            className="relative py-24 md:py-32 px-6 md:px-16 bg-[var(--color-surface)] "
+          >
             <DecorativeFrame />
             <AnimatedDivider />
             <div className="w-full flex flex-col md:flex-row gap-16 md:gap-24 items-start">
               <div className="w-full md:w-1/2">
-                <SectionHeader 
+                <SectionHeader
                   number="03"
                   category="About"
                   title="Engineering Philosophy"
                 />
                 <div className="prose prose-invert max-w-none">
                   <p className="text-[var(--color-text-muted)] leading-relaxed text-sm md:text-base font-light italic mb-6 text-balance">
-                    I am a full stack web developer with a strong foundation in Java, and experience working with Kotlin, Dart, and Python. I'm well-versed in building APIs with Next.js and architecting scalable systems, as demonstrated by the various projects and engines throughout this portfolio.
+                    I am a full stack web developer with a strong foundation in
+                    Java, and experience working with Kotlin, Dart, and Python.
+                    I'm well-versed in building APIs with Next.js and
+                    architecting scalable systems, as demonstrated by the
+                    various projects and engines throughout this portfolio.
                   </p>
                   <p className="text-[var(--color-text-muted)] leading-relaxed text-sm md:text-base font-light italic mb-6 text-balance">
-                    Beyond coding, I'm a video editor, a writer (whether I'm good at it is another story), and a scriptwriter for my own YouTube channel (<a href="https://youtube.com/@cookieukw" target="_blank" rel="noreferrer" className="text-[var(--color-accent)] hover:underline">@cookieukw</a>). I also have an eclectic taste in music, usually leaning towards beat-heavy tracks, which often fuels my creative and engineering focus.
+                    Beyond coding, I'm a video editor, a writer (whether I'm
+                    good at it is another story), and a scriptwriter for my own
+                    YouTube channel (
+                    <a
+                      href="https://youtube.com/@cookieukw"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[var(--color-accent)] hover:underline"
+                    >
+                      @cookieukw
+                    </a>
+                    ). I also have an eclectic taste in music, usually leaning
+                    towards beat-heavy tracks, which often fuels my creative and
+                    engineering focus.
                   </p>
                 </div>
-                
+
                 <div className="grid grid-cols-2 gap-8 mt-16 pt-12 border-t border-[var(--color-border)]">
                   <div>
-                    <div className="text-4xl md:text-5xl font-bold tracking-tighter text-[var(--color-text-main)] mb-2">5+</div>
-                    <div className="font-bold text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)]">Years Engineering</div>
+                    <div className="text-4xl md:text-5xl font-bold tracking-tighter text-[var(--color-text-main)] mb-2">
+                      5+
+                    </div>
+                    <div className="font-bold text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
+                      Years creating random crap
+                    </div>
                   </div>
                   <div>
-                    <div className="text-4xl md:text-5xl font-bold tracking-tighter text-[var(--color-text-main)] mb-2">20+</div>
-                    <div className="font-bold text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)]">Projects Shipped</div>
+                    <div className="text-4xl md:text-5xl font-bold tracking-tighter text-[var(--color-text-main)] mb-2">
+                      20+
+                    </div>
+                    <div className="font-bold text-[10px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
+                      Projects Shipped
+                    </div>
                   </div>
                 </div>
               </div>
-              
+
               <div className="w-full md:w-1/2 relative aspect-[4/5] bg-[var(--color-background)] border border-[var(--color-border)] overflow-hidden group">
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
-                 <img 
-                   src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2070" 
-                   alt="Code architecture placeholder" 
-                   className="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-100 transition-opacity duration-700 group-hover:scale-105"
-                   style={{ transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)" }}
-                 />
-                 <div className="absolute bottom-6 left-6 z-20 font-bold text-[10px] tracking-widest text-white/50 uppercase">
-                   Fig. 1 — Architecture
-                 </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
+                <img
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2070"
+                  alt="Code architecture placeholder"
+                  className="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-100 transition-opacity duration-700 group-hover:scale-105"
+                  style={{
+                    transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
+                  }}
+                />
+                <div className="absolute bottom-6 left-6 z-20 font-bold text-[10px] tracking-widest text-white/50 uppercase">
+                  Fig. 1 — Cool code
+                </div>
               </div>
             </div>
           </section>
 
-          <section id="stack" className="relative py-24 md:py-32 px-6 md:px-16 w-full ">
+          <section
+            id="stack"
+            className="relative py-24 md:py-32 px-6 md:px-16 w-full "
+          >
             <DecorativeFrame />
             <AnimatedDivider />
-            <SectionHeader 
+            <SectionHeader
               number="04"
               category="Technology"
               title="Technical Arsenal"
@@ -486,36 +529,67 @@ export default function App() {
               <TechStack />
             </div>
           </section>
-          
-          <section id="contact" className="py-24 md:py-48 px-6 md:px-16 flex flex-col items-center justify-center text-center relative overflow-hidden">
+
+          <section
+            id="contact"
+            className="py-24 md:py-48 px-6 md:px-16 flex flex-col items-center justify-center text-center relative overflow-hidden"
+          >
             <DecorativeFrame />
             <AnimatedDivider />
-            
-            <span className="font-bold font-mono text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)] mb-8">05 / Next Steps</span>
+
+            <span className="font-bold font-mono text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)] mb-8">
+              05 / Next Steps
+            </span>
             <h2 className="text-4xl md:text-7xl font-bold tracking-tighter mb-12 max-w-4xl leading-[0.9] text-balance uppercase">
               Let's talk about software.
             </h2>
-            
+
             <div className="flex flex-col md:flex-row items-center gap-6 relative z-10">
-              <a href="mailto:erik.contato.ukw@gmail.com" className="group relative inline-flex items-center justify-center gap-4 px-10 py-4 border border-[var(--color-border)] hover:border-[var(--color-accent)] bg-white/5 transition-all overflow-hidden hover:-translate-y-1">
-                <span className="relative z-10 font-bold font-mono text-[11px] tracking-[0.3em] uppercase">Email</span>
+              <a
+                href="mailto:erik.contato.ukw@gmail.com"
+                className="group relative inline-flex items-center justify-center gap-4 px-10 py-4 border border-[var(--color-border)] hover:border-[var(--color-accent)] bg-white/5 transition-all overflow-hidden hover:-translate-y-1"
+              >
+                <span className="relative z-10 font-bold font-mono text-[11px] tracking-[0.3em] uppercase">
+                  Email
+                </span>
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="group relative inline-flex items-center justify-center gap-4 px-10 py-4 border border-[var(--color-border)] hover:border-[var(--color-accent)] bg-white/5 transition-all overflow-hidden hover:-translate-y-1">
-                <span className="relative z-10 font-bold font-mono text-[11px] tracking-[0.3em] uppercase">GitHub</span>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative inline-flex items-center justify-center gap-4 px-10 py-4 border border-[var(--color-border)] hover:border-[var(--color-accent)] bg-white/5 transition-all overflow-hidden hover:-translate-y-1"
+              >
+                <span className="relative z-10 font-bold font-mono text-[11px] tracking-[0.3em] uppercase">
+                  GitHub
+                </span>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="group relative inline-flex items-center justify-center gap-4 px-10 py-4 border border-[var(--color-border)] hover:border-[var(--color-accent)] bg-white/5 transition-all overflow-hidden hover:-translate-y-1">
-                <span className="relative z-10 font-bold font-mono text-[11px] tracking-[0.3em] uppercase">LinkedIn</span>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative inline-flex items-center justify-center gap-4 px-10 py-4 border border-[var(--color-border)] hover:border-[var(--color-accent)] bg-white/5 transition-all overflow-hidden hover:-translate-y-1"
+              >
+                <span className="relative z-10 font-bold font-mono text-[11px] tracking-[0.3em] uppercase">
+                  LinkedIn
+                </span>
               </a>
-              <a href="https://youtube.com/@cookieukw" target="_blank" rel="noreferrer" className="group relative inline-flex items-center justify-center gap-4 px-10 py-4 border border-[var(--color-border)] hover:border-[var(--color-accent)] bg-white/5 transition-all overflow-hidden hover:-translate-y-1">
-                <span className="relative z-10 font-bold font-mono text-[11px] tracking-[0.3em] uppercase">YouTube</span>
+              <a
+                href="https://youtube.com/@cookieukw"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative inline-flex items-center justify-center gap-4 px-10 py-4 border border-[var(--color-border)] hover:border-[var(--color-accent)] bg-white/5 transition-all overflow-hidden hover:-translate-y-1"
+              >
+                <span className="relative z-10 font-bold font-mono text-[11px] tracking-[0.3em] uppercase">
+                  YouTube
+                </span>
               </a>
             </div>
           </section>
         </main>
       </div>
-      
+
       <Footer />
-      
+
       {/* OVERLAY TEXTURE (GRAIN EFFECT) */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.03] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')] z-50"></div>
     </div>

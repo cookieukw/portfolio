@@ -22,7 +22,7 @@ export function Navigation() {
         <div className="flex items-center gap-4">
           <span className="text-[10px] tracking-[0.2em] font-bold text-[var(--color-accent)]">PORTFOLIO</span>
           <div className="h-4 w-[1px] bg-[var(--color-border)] hidden md:block"></div>
-          <span className="text-[10px] tracking-[0.2em] uppercase opacity-50 font-medium hidden md:block">Portfolio System</span>
+          <span className="text-[10px] tracking-[0.2em] uppercase opacity-50 font-medium hidden md:block">ERIK DE SOUZA</span>
         </div>
         
         <nav className="hidden md:flex gap-10">

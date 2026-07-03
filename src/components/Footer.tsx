@@ -34,9 +34,7 @@ export function Footer() {
         {/* Current Focus */}
         <div className="flex-1 border-b md:border-b-0 md:border-r border-[var(--color-border)] p-4 md:p-6 flex items-center justify-between">
           <span>Current Focus</span>
-          <span className="text-[var(--color-accent)]">
-            Engine Architecture
-          </span>
+          <span className="text-[var(--color-accent)]">Pizza is amazing.</span>
         </div>
 
         {/* Identity */}
